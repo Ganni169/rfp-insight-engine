@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfp-insight-engine"
+version = "0.1.0"
+description = "A professional Python RAG project for RFP analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "langchain",
+    "llama-index",
+    "unstructured[pdf]",
+    "chromadb",
+    "langchain-groq",
+    "langchain-huggingface",
+    "langchain-text-splitters",
+    "langchain-chroma",
+    "sentence-transformers",
+    "python-multipart",
+    "python-dotenv",
+    "pyyaml"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8"
+]

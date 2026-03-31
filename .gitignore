@@ -1,0 +1,32 @@
+# Environment variables
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
+
+# Data and Vector DB (Do NOT commit giant embeddings or temp files)
+backend/data/temp/*
+backend/data/vector_store/chroma_db/*
+!backend/data/temp/.gitkeep
+!backend/data/vector_store/chroma_db/.gitkeep
+
+# Next.js / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*.local
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
